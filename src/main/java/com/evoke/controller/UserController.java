@@ -13,6 +13,7 @@ public class UserController {
 	private UserService userService;
 	@RequestMapping("/showForm")
 	public String showForm(Model model) {
+		System.out.println("=======================================================");
 		model.addAttribute("user", new User());
 		return "showForm";
 	}
